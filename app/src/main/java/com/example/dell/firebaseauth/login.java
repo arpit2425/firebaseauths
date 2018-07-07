@@ -31,6 +31,7 @@ public class login extends AppCompatActivity {
         editText1=(EditText)findViewById( R.id.editemail2 );
         editText2=(EditText)findViewById( R.id.editpass2 );
         button=(Button)findViewById( R.id.login );
+
         textView=(TextView)findViewById( R.id.textregister );
         mAuth = FirebaseAuth.getInstance();
 
@@ -41,6 +42,7 @@ public class login extends AppCompatActivity {
                 signuser();
             }
         } );
+
         textView.setOnClickListener( new View.OnClickListener() {
             @Override
             public void onClick(View view) {
